@@ -1,38 +1,42 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="media">
+      <a class="media-left" href="#">
+        <img class="media-object">
+          <%= image_tag @movie.image.url(:medium) %>
+      </a>
 
-<p>
-  <%= image_tag @movie.image.url( :medium ) %>
-</p>
+      <div class="media-body">
+        <table class="table">
+          <tr>
+            <td> <strong>Title: </strong> </td>
+            <td><%= @movie.title %> </td>
+          </tr>
+          
+          <tr>
+            <td> <strong>Director: </strong>  </td>
+            <td><%= @movie.director %> </td>
+          </tr>
 
-<p>
-  <strong>Title:</strong>
-  <%= @movie.title %>
-</p>
+          <tr>
+            <td> <strong>Rating: </strong>  </td>
+            <td><%= @movie.rating %> </td>
+          </tr>
 
-<p>
-  <strong>Director:</strong>
-  <%= @movie.director %>
-</p>
+          <tr>
+            <td> <strong>Genre: </strong>  </td>
+            <td><%= @movie.genre %> </td>
+          </tr>
 
-<p>
-  <strong>Run time:</strong>
-  <%= @movie.run_time %>
-</p>
+          <tr>
+            <td> <strong>Description: </strong>  </td>
+            <td><%= @movie.description %> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @movie.description %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @movie.rating %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @movie.genre %>
-</p>
-
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Edit', edit_movie_path %> |
 <%= link_to 'Back', movies_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  air_date: MyString
+  run_time: MyString
+
+two:
+  name: MyString
+  air_date: MyString
+  run_time: MyString

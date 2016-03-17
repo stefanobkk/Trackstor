@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default" role="navigation">
+  <%= link_to image_tag("http://image3.putlocker.is/images/mainlogo.jpg"), root_path%>
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to "HomePage", root_path, class: "navbar-brand"%>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <% if user_signed_in? %>
+          <li><%= link_to "Movie", root_path %> </li>
+          <li><%= link_to "Tv Show", tvshows_path %> </li>
+          <li><%= link_to "New Movie", new_movie_path, class: "active" %></li>
+          <li><%= link_to "Account", edit_user_registration_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, :method => :delete %>
+        <%else%>
+          <li><%= link_to "Sign in", new_user_session_path %> </li>
+          <li><%= link_to "Sign_up", new_user_registration_path %> </li>
+        <% end %>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
