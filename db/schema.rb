@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160320175119) do
+ActiveRecord::Schema.define(version: 20160320205126) do
+
+  create_table "episodes", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "episode_num"
+    t.integer  "season_num"
+    t.date     "air_date"
+    t.string   "rating"
+    t.integer  "tvshow_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "episodes", ["tvshow_id"], name: "index_episodes_on_tvshow_id"
 
   create_table "movies", force: :cascade do |t|
     t.string   "title"
