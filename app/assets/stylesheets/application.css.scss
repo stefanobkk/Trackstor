@@ -16,12 +16,133 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "welcome";
+@import "movies";
 
-body {
-	background: #5A51c0;
+body{
+	background: white;
+}
+
+.wrapper_big {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.wrapper_small {
+	width: 50%;
+	margin: 0 auto;
 }
 
 .thumbnail{
-	border: 0px;
+	border: none;
+	outline: none;
 	background-color:transparent;
 }
+
+.button {
+	color: orange;
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	border: none;
+	outline: none;
+	display: inline-block;
+	min-width: 12rem;
+}
+
+.button_highlight {
+	background: white;
+	&:hover {
+	background: darken(orange, 10%);
+	}
+}
+
+.button_normal {
+	background: white;
+	&:hover {
+	background: darken(orange, 10%);
+	}
+}
+
+.banner{
+	background-image: url(http://eaassets-a.akamaihd.net/www.battlefield.com/sites/default/files/China_Rising_1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-bottom: 4rem;
+	margin-top: 0;
+	height: 20vh;
+	h1 {
+		text-align: center;
+		color: white;
+		font-weight: 300px;
+		margin: 0;
+		padding: 8rem 0;
+	}
+}
+
+.feature_movie{
+	margin-top: 4rem;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+.movie_overview{
+	padding-bottom: none;
+	text-align: center;
+	h3{
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	color: black;
+	}
+	.director{
+		color: lighten(black, 50%);
+	}
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	box-shadow: 5 1px 5 rgba(0,0,0,0.5);
+}
+
+.row{
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+
+}
+.pagination:before, .pagination:after {
+	 content: " ";
+	 display:table;
+}
+
+.pagination:after {
+	clear: both;
+}
+
+.pagination {
+	margin: 2rem 0;
+	text-align: center;
+	a, .previous_page, .current, .next_page {
+		padding: 0.75rem 1rem;
+		margin: 0 0.25rem;
+		border-radius: 0.15rem;
+		line-height: 1.25;
+		text-decoration: none;
+		background: grey;
+		font-weight: 700;
+		font-size: 0.7rem;
+	}
+}
+
+input[type="email"], input[type="password"], {
+	width: 40%;
+}
+.login_container{
+	background-image: url(https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcwxMAvUfuQqFvcKItJViXfvKbjVIQUdBE6pO4514x_ZXEeFe07upJMV4AZMBX9gK_QD4OKAHlBs8On_MVnpUw495ve0fd60AHdsd1nbZ.J447nEAv7cG2pgyGD.lwSOiBgZBaK8w8XREjeVjFw_fivNG2P9FSADB7sY1S6OR8utM-&format=jpg);
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+

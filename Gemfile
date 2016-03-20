@@ -13,7 +13,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5'
 gem 'paperclip', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3'
-
+gem 'themoviedb', '~> 1.0'
+gem 'json', '~> 1.8'
 
 
 group :development, :test do

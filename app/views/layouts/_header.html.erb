@@ -1,5 +1,4 @@
 <nav class="navbar navbar-default" role="navigation">
-  <%= link_to image_tag("http://image3.putlocker.is/images/mainlogo.jpg"), root_path%>
   <div class="container">
     <div class="navbar-header">
       <%= link_to "HomePage", root_path, class: "navbar-brand"%>
@@ -8,7 +7,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
-          <li><%= link_to "Movie", root_path %> </li>
+          <li><%= link_to "Movie", movies_path %> </li>
           <li><%= link_to "Tv Show", tvshows_path %> </li>
           <li><%= link_to "New Movie", new_movie_path, class: "active" %></li>
           <li><%= link_to "Account", edit_user_registration_path %></li>
