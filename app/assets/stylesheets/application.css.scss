@@ -24,13 +24,28 @@ body{
 }
 
 .wrapper_big {
+	width: 90%;
+	margin: 0 auto;
+	
+}
+
+.wrapper {
 	width: 80%;
 	margin: 0 auto;
 }
 
 .wrapper_small {
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
+}
+
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after{
+	clear:both;
 }
 
 .thumbnail{
@@ -135,8 +150,9 @@ body{
 input[type="email"], input[type="password"], {
 	width: 40%;
 }
+
 .login_container{
-	background-image: url(https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcwxMAvUfuQqFvcKItJViXfvKbjVIQUdBE6pO4514x_ZXEeFe07upJMV4AZMBX9gK_QD4OKAHlBs8On_MVnpUw495ve0fd60AHdsd1nbZ.J447nEAv7cG2pgyGD.lwSOiBgZBaK8w8XREjeVjFw_fivNG2P9FSADB7sY1S6OR8utM-&format=jpg);
+	background-image: image-url("welcome.jpg");
 	background-repeat: no-repeat;
 	height: 100vh;
 	background-size: cover;
@@ -144,5 +160,16 @@ input[type="email"], input[type="password"], {
 	text-align: center;
 	margin: 0 auto;
 }
+
+.register_container{
+	background-image: image-url("welcome.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
 
 
