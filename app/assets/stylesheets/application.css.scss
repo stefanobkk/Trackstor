@@ -150,6 +150,8 @@ body{
 	}
 }
 
+
+
 input[type="email"], input[type="password"], {
 	width: 40%;
 }
@@ -174,6 +176,8 @@ input[type="email"], input[type="password"], {
 	margin: 0 auto;
 }
 
+
+
 .new_movie_container{
 	background-image: image-url("welcome.jpg");
 	background-repeat: no-repeat;
@@ -186,6 +190,23 @@ input[type="email"], input[type="password"], {
 	width: 90%;
 	margin: 0 auto;
 }
+
+.edit_movie_container{
+	background-image: image-url("welcome.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+}
+.wrapper_small_edit_movie {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+
 .new_tvshow_container{
 	background-image: image-url("welcome.jpg");
 	background-repeat: no-repeat;
@@ -198,7 +219,29 @@ input[type="email"], input[type="password"], {
 	width: 90%;
 	margin: 0 auto;
 }
+
+.edit_tvshow_container{
+	background-image: image-url("welcome.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+}
+.wrapper_small_edit_tvshow {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
 .navbar {
     margin-bottom: 0;
 }
+
+
 

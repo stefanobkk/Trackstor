@@ -9,7 +9,7 @@
 				<a href="#" id="logo"> Trackstor </a>
 				<nav>
 					<ul>
-						<li><a href=""> Explore</a></li>
+						<li><%= link_to 'Explore', movies_path %></li>
 						<li><%= link_to "Sign in",  new_user_session_path%></li>
 						<li><a href="#"> Sign Up</a></li>
 					</ul>
@@ -18,8 +18,8 @@
 		</header>
 		<div class="wrapper_small">
 			<h1> Discover new Movies and Tv Shows..</h1>
-			<%= link_to "Explore", movies_path, class:"button button_highlight" %>
-			<%= link_to "Create Playlist", new_movie_path, class:"button button_normal"%>
+			<%= link_to "Movies", movies_path, class:"button button_highlight" %>
+			<%= link_to "Tv Shows", tvshows_path, class:"button button_normal"%>
 		</div>
 	</div>
 </body>

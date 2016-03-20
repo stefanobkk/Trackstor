@@ -1,5 +1,6 @@
 class TvshowsController < ApplicationController
   before_action :set_tvshow, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, execpt: [:index, :show]
   # GET /tvshows
   # GET /tvshows.json
   def index
