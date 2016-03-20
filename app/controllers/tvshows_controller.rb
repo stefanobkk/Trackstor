@@ -1,6 +1,5 @@
 class TvshowsController < ApplicationController
   before_action :set_tvshow, only: [:show, :edit, :update, :destroy]
-
   # GET /tvshows
   # GET /tvshows.json
   def index
@@ -69,6 +68,6 @@ class TvshowsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tvshow_params
-      params.require(:tvshow).permit(:name, :air_date, :run_time)
+      params.require(:tvshow).permit(:name, :air_date, :run_time, :image)
     end
 end

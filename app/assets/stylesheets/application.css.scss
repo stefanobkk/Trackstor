@@ -14,10 +14,13 @@
  *= require_self
  */
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "welcome";
 @import "movies";
+
+
 
 body{
 	background: white;
@@ -35,7 +38,7 @@ body{
 }
 
 .wrapper_small {
-	width: 60%;
+	width: 40%;
 	margin: 0 auto;
 }
 
@@ -171,5 +174,31 @@ input[type="email"], input[type="password"], {
 	margin: 0 auto;
 }
 
-
+.new_movie_container{
+	background-image: image-url("welcome.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+}
+.wrapper_small_new_movie {
+	width: 90%;
+	margin: 0 auto;
+}
+.new_tvshow_container{
+	background-image: image-url("welcome.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+}
+.wrapper_small_new_tvshow {
+	width: 90%;
+	margin: 0 auto;
+}
+.navbar {
+    margin-bottom: 0;
+}
 

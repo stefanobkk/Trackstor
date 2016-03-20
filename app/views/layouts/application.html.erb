@@ -8,7 +8,18 @@
 </head>
 <body>
 <%= render 'layouts/header' %>
-<%= yield %>
 
+<% if alert %>
+	<p class="alert">
+		<%= notice %>
+	</p>
+
+<% elsif notice %>
+	<p class="notice">
+		<%= notice %>
+	</p>
+<% end %>
+
+<%= yield %>
 </body>
 </html>
