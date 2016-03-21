@@ -15,6 +15,9 @@ gem 'paperclip', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'themoviedb', '~> 1.0'
 gem 'json', '~> 1.8'
+gem 'elastic_searchable', '~> 3.0'
+gem 'searchkick', '~> 1.2'
+
 
 
 group :development, :test do

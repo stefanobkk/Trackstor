@@ -12,9 +12,6 @@
           <img class="media-object">
             <%= image_tag @tvshow.image.url(:medium) %>
         </a>
-
-
-
         <div class="media-body">
           <table class="table">
             <tr>
@@ -30,11 +27,11 @@
               <td><%= @tvshow.run_time%> </td>
             </tr>
           </table>
-          <h3> <%= link_to 'See all episodes', tvshow_episode_path %> </h3>
         </div>
       </div>
     </div>
+    <%= link_to 'Edit', edit_tvshow_path %> |
+<%= link_to 'Destroy', @tvshow, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Back', tvshow_path %>
   </div>
 </body>
-
-

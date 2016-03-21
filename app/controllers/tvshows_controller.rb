@@ -11,6 +11,7 @@ class TvshowsController < ApplicationController
   # GET /tvshows/1.json
   def show
     @tvshow = Tvshow.find(params[:id])
+    @episodes = Episode.where(tvshow_id: @tvshow).order("created_at DESC")
   end
 
   # GET /tvshows/new

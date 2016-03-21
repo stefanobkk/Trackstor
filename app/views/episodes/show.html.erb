@@ -12,14 +12,15 @@
 		<div id="episodes">
 			<div class="wrapper_small">
 				<ul class="cf">
-					<li class="cf">
-						<div class="episode_overview">
-						<h2><%= @episode.title %></h2>
-						<p class="description"><%=@episode.description %>
-						</p>
-
-						</div>
-					</li>
+						<li class="cf">
+						<%= @episodes.each do |episode| %>
+							<div class="episode_overview">
+							<h2><%= @episode.title %></h2>
+							<p class="description"><%=@episode.description %>
+							</p>
+							</div>
+						<% end %>
+						</li>
 				</ul>
 			</div>
 		</div>

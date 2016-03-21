@@ -4,6 +4,7 @@ class EpisodesController < ApplicationController
 
 	def new 
 		@episode = @tvshow.episodes.new
+
 	end
 
 	def create
@@ -16,7 +17,8 @@ class EpisodesController < ApplicationController
 		end
 	end
 
-	def show 
+	def show
+		@episodes = Episode.where(tvshow_id: @tvshow).order("created_at DESC")
 		
 	end
 
