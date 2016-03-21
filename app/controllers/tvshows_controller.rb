@@ -4,12 +4,13 @@ class TvshowsController < ApplicationController
   # GET /tvshows
   # GET /tvshows.json
   def index
-    @tvshows = Tvshow.all
+    @tvshows = Tvshow.all.order("created_at DESC")
   end
 
   # GET /tvshows/1
   # GET /tvshows/1.json
   def show
+    @tvshow = Tvshow.find(params[:id])
   end
 
   # GET /tvshows/new

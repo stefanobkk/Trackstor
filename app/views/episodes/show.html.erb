@@ -1,0 +1,27 @@
+<body>
+	<div id="tvshow_show">
+		<div id="show_banner">
+			<div class="wrapper_small">
+				<h1> <%= @tvshow.name %> </h1>
+				<p class="air_date"> Airing On: <%= @tvshow.air_date %> </p>
+				<p class="run_time"> Run Time: <%= @tvshow.run_time %> </p>
+				<p> <%= link_to 'All Tv Shows',tvshows_path, class:"button" %></p> 
+			</div>
+		</div>
+
+		<div id="episodes">
+			<div class="wrapper_small">
+				<ul class="cf">
+					<li class="cf">
+						<div class="episode_overview">
+						<h2><%= @episode.title %></h2>
+						<p class="description"><%=@episode.description %>
+						</p>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>

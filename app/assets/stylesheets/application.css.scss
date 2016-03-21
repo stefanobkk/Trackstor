@@ -235,13 +235,54 @@ input[type="email"], input[type="password"], {
 
 
 
-
-
+#tvshow_show {
+	#show_banner {
+		background: grey;
+		text-align: center;
+		padding: 5rem 0;
+		h1 {
+			font-size: 3rem;
+			font-weight: 600;
+			color: black;
+			margin: 0 0 .5rem 0;
+		}
+		.run_time {
+			width: 85%;
+			line-height: 1.75;
+			margin: 0 auto 2rem auto;
+			color: lighten(black, 30%);
+			font-weight: 700;
+			float: center;
+		}
+		.air_date {
+			width: 85%;
+			line-height: 1.75;
+			margin: 0 auto 2rem auto;
+			color: lighten(black, 30%);
+			font-weight: 700;
+			float: center;
+		}
+		.button {
+			background: white;
+			font-weight: 700;
+		}
+		.episode_thumbnail {
+			float: left;
+		}
+	}
+	#episodes {
+		padding: 3rem 0;
+		ul{
+			list-style: none;
+			padding-left: 2rem;
+			li {
+			}
+		}
+	}
+}
 
 
 .navbar {
     margin-bottom: 0;
 }
-
-
 

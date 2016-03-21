@@ -12,6 +12,9 @@
           <img class="media-object">
             <%= image_tag @tvshow.image.url(:medium) %>
         </a>
+
+
+
         <div class="media-body">
           <table class="table">
             <tr>
@@ -27,85 +30,11 @@
               <td><%= @tvshow.run_time%> </td>
             </tr>
           </table>
+          <h3> <%= link_to 'See all episodes', tvshow_episode_path %> </h3>
         </div>
       </div>
     </div>
   </div>
-
-
-  <div id="movie_show">
-    <div id="show banner">
-      <div class="wrapper_small">
-        <h1> Bla bla bla </h1>
-        <p class="description"> ffewjhfweiuhgwehgoewgewgewgewgwegkwengjkewngjkwehgjekwhnkwgkewngkjewgewghewkgekwhgjewhghewkjghwekjhgewhg</p>
-      </div>
-    </div>
-
-    <div id="breadcrums">
-      <a href="#">
-      All TvSHows
-      <span> </span>
-      Stefano's thing
-      </a>
-    </div>
-
-    <div id="episodes">
-      <div class="wrapper_small">
-        <ul class="cf">
-          <li class="cf">
-            <div class="episode_image">
-              <a href="#">
-                <img> 
-              </a>
-            </div>
-            <div class="episode_overview">
-              <h2><a href="episode"> Episdoessssss</a></h2>
-              <p class="description"> Descriptionnn </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="pagination">
-    <span class="previous_page disable"> Previous </span>
-    <em class="current">1</em>
-    <a href="#">2</a>
-    <a class="next_page" href="#"> Next</a>
-  </div>
-
-  <%= link_to 'Edit', edit_tvshow_path(@tvshow) %> |
-  <%= link_to 'Back', tvshows_path %>
-  <%= link_to 'Destroy', @tvshow, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-<!-- 
-  <div class="container table-responsive toggle-circle filled">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th data-toggle="true"> Name </th>
-          <th> Episode Number </th>
-          <th> Air Date </th>
-          <th> Ratings </th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td> </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-<script type="text/javascript">
-  $(function () {
-    $('.footable').footable();
-  });
-</script>
 </body>
-
--->
 
 
