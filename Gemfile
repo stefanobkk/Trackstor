@@ -19,9 +19,9 @@ gem 'elastic_searchable', '~> 3.0'
 gem 'searchkick', '~> 1.2'
 
 
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'railroady', '~> 1.4'
   gem 'byebug'
 end
 
