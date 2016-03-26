@@ -1,6 +1,9 @@
+#ruby-gemset=trial_site
 source 'https://rubygems.org'
 
 
+gem 'sqlite3', '~> 1.3'
+gem 'pg', '~> 0.18.4'
 gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -13,23 +16,26 @@ gem 'devise', '~> 3.5'
 gem 'paperclip', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'themoviedb', '~> 1.0'
-gem 'elastic_searchable', '~> 3.0'
-gem 'searchkick', '~> 1.2'
-gem 'pg', '~> 0.18.4'
+#gem 'elastic_searchable', '~> 3.0'
+#gem 'searchkick', '~> 1.2'
+
+gem 'capistrano', '~> 3.4.0'
+gem 'capistrano-rails'
+gem 'capistrano-rvm'
 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
   gem 'railroady', '~> 1.4'
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end
 
