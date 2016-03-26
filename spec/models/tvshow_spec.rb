@@ -4,7 +4,7 @@ RSpec.describe Tvshow, type: :model do
 
   before(:each) do
     @tvshow = Tvshow.create!(name: "Rick & Morty", air_date: "12/03/2014", run_time: "22 minutes")
-    @tvshow2 = Tvshow.create!(name: "Rick & Morty", air_date: "22/03/2014", run_time: "20 minutes")
+    @tvshow2 = Tvshow.create(name: "Rick & Morty", air_date: "22/03/2014", run_time: "20 minutes")
   end
 
   describe "creation" do 
@@ -68,6 +68,10 @@ RSpec.describe Tvshow, type: :model do
 
   describe "uniqueness" do
     it "name has to be unique" do
-      { should validate_uniqueness_of @tvshow.name}
+      @tvshow.name = "Rick & Morty"
+      @tvshow.save
+      @tvshow2.name = "Rick & Morty"
+      expect(@truck2.save).to be(false)
     end
+  end
 end
