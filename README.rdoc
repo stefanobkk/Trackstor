@@ -1,28 +1,5 @@
-== README
+* I was not able to host my project onto Digital Ocean. I had problems verifying the datbase password and could not get the database to connect. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* I created test cases using rspec and tested each of my models.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Put in some xss prevention to stop people from taking data. 
