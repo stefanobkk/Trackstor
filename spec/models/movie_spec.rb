@@ -73,8 +73,8 @@ RSpec.describe Movie, type: :model do
 			expect(@movie).to_not be_valid
 		end
 
-		it "description should not allow more than 200 character" do
-			@movie.description = "M"*202
+		it "description should not allow more than 1000 character" do
+			@movie.description = "M"*1010
 			expect(@movie).to_not be_valid
 		end
 	end
